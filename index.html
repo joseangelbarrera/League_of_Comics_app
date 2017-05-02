@@ -23,12 +23,12 @@
                 <label class="control-label" for="focusedInput"></label>
                 <h2>Search game<h2>
                 <input ng-model="gameInput" class="form-control" id="focusedInput" type="text" placeholder="Your search">
-                <button ng-click="searchGame()" href="#" class="btn btn-primary btn-lg btn-block">Search game</button>
+                <button ng-click="searchGameButton()" href="#" class="btn btn-primary btn-lg btn-block">Search game</button>
             </div>
         </div>
 </div>
 <select id="" class="input">
-    <option ng-repeat="game in gamelist" >{{ game.ALGO }}</option>
+    <option ng-repeat="game in gamelist" >{{ game.aliases }} hola</option>
 </select>
 <div class="container">
     <a href="#" class="btn btn-success">Facebook</a>
@@ -38,9 +38,11 @@
 </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+    
     <script type="text/javascript" src="js/controllers/homeController.js"></script>
-
+    
 
 </body>
 
