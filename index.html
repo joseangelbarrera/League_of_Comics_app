@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>League of Games</title>
-    <link rel="stylesheet" type="text/css" href="http://bootswatch.com/lumen/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">
 </head>
 <body>
-<h1>{{ title }}</h1>
-    <nav class="navbar navbar-default">
+
+    <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">League of Games. The game search engine.</a>
             </div>
         </div>
     </nav>
-    <div class="jumbotron ">
+    <div ng-controller="homeController" class="jumbotron ">
         <div class="container">
             <div class="form-group">
+            <h1>{{ title }}</h1>
                 <label class="control-label" for="focusedInput"></label>
                 <h2>Search game<h2>
                 <input ng-model="gameSearch" class="form-control" id="focusedInput" type="text" placeholder="Your search">
-                <button href="#" class="btn btn-default btn-lg btn-block">Search game</button>
+                <button href="#" class="btn btn-primary btn-lg btn-block">Search game</button>
             </div>
         </div>
 </div>
