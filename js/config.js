@@ -5,8 +5,8 @@ angular.module('gameApp')
                 templateUrl: '/templates/index.html',
                 controller: 'homeController'
             })
-            .when('/game-search', {
-            	templateUrl: 'templates/game-search.html',
+            .when('/game_search', {
+            	templateUrl: 'templates/game_search.html',
             	controller:
             })
             .when('/game-info', {
@@ -14,4 +14,3 @@ angular.module('gameApp')
             	controller:
             })
     })
-
