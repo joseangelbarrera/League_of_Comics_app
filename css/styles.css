@@ -1,0 +1,30 @@
+
+/* index */
+.jumbotron {
+    background-color: darkgrey;
+    background-image: margin-bottom: 0px;
+    background-position: 30% 35%;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-top: 100px: color: white;
+}
+
+
+
+/* game-info template */
+
+.desc-img-container {
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
