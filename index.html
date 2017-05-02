@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gameApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>League of Games</title>
+    <link rel="stylesheet" type="text/css" href="http://bootswatch.com/lumen/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<h1>{{ title }}</h1>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">League of Games. The game search engine.</a>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron ">
+        <div class="container">
+            <div class="form-group">
+                <label class="control-label" for="focusedInput"></label>
+                <h2>Search game<h2>
+                <input ng-model="gameSearch" class="form-control" id="focusedInput" type="text" placeholder="Your search">
+                <button href="#" class="btn btn-default btn-lg btn-block">Search game</button>
+            </div>
+        </div>
+</div>
+<ul>
+    <li>
+    </li>
+</ul>
+<div class="container">
+    <a href="#" class="btn btn-success">Facebook</a>
+    <a href="#" class="btn btn-success">Twitter</a>
+    <a href="#" class="btn btn-success">Instagram</a>
+    <a href="#" class="btn btn-link navbar-right">About Us</a>
+</div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/homeController.js"></script>
+
+
+</body>
+
+</html>
