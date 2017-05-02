@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="legendsOfGame">
+
+<head>
+    <meta charset="UTF-8 ">
+    <title>Document</title>
+    <link rel="stylesheet " type="text/css " href="http://bootswatch.com/lumen/bootstrap.min.css ">
+        <script type="text/javascript " src="https://opensource.keycdn.com/angularjs/1.6.2/angular.min.js "></script>
+
+</head>
+<style>
+.jumbotron {
+    background-color: darkgrey;
+    background-image: margin-bottom: 0px;
+    background-position: 30% 35%;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    color: white;
+    /*    text-shadow: black 0.1em 0.1em 0.1em;
+*/
+}
+
+input {
+	    margin-bottom: 25px;
+}
+
+h2 {
+    margin-top: 100px:
+    color: white;
+}
+
+
+</style>
+
+<body ng-controler="searchGameController">
+    <nav class="navbar navbar-default ">
+        <div class="container ">
+            <div class="navbar-header ">
+                <a class="navbar-brand " href="# ">League of Games. The game search engine.</a>
+            </div>
+        </div>
+    </nav>
+    {{test}}
+    <div class="jumbotron ">
+        <div class="container ">
+            <div class="form-group ">
+                <label class="control-label " for="focusedInput "></label>
+                <h2>Search game<h2>
+
+				 <input  ng-model="gameTitle" class="form-control " id="focusedInput " type="text " value="Write here your game... "">{{gameTitle}}
+				<button ng-click="findGames()" class="btn btn-default btn-lg btn-block"> Search game</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="container">
+	    <a href="#" class="btn btn-success">Facebook</a>
+	    <a href="#" class="btn btn-success">Twitter</a>
+	    <a href="#" class="btn btn-success">Instagram</a>
+	    <a href="#" class="btn btn-link navbar-right">About Us</a>
+	</div> -->
+<script type="text/javascript">
+angular.module("legendsOfGame", [])
+.controller("searchGameController", function($scope, GamesFactory) {
+
+	console.log("sdfsdf")
+    // var gameTitle = $scope.gameTitle
+    // var test = "as"
+    // $scope.findGames = function(gameTitle) {
+    // 	console.log("ecoooo")
+    //     GamesFactory.getGames(gameTitle)
+    //         .then(function(data) {
+    //             console.log("im here")
+    //             console.log(data)
+    //         })
+    // }
+})
+
+
+// .factory('GamesFactory', function($http) {
+//     var getGames = function(gameTitle) {
+//         console.log("From Factory we recived => " + gameTitle)
+//         return $http.post('https://floating-mountain-70543.herokuapp.com/getInfo', {
+//                 "gameTitle": gameTitle
+//             })
+//             .error(function(data) {
+//                 console.log('Error: ' + data);
+//             });
+//     }
+//     var getInfo = function(gameId) {
+//         console.log(gameId)
+//         return $http.post('https://floating-mountain-70543.herokuapp.com/getMoreInfo', {
+//                 "gameId": gameId
+//             })
+//             .error(function(data) {
+//                 console.log('Error: ' + data);
+//             });
+//     }
+//     return {
+//         getGames: getGames,
+//         getInfo: getInfo
+//     }
+// })
+</script>
+</body>
+
+</html>
