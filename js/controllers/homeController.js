@@ -1,7 +1,6 @@
 angular.module('gameApp')
 	
-  .controller('homeController', function ($scope){
-     console.log("something in the way")
-     $scope.title= "THIS IS SPARTA!"
+  .controller('homeController', function ($scope, gameAppService ){
+     $scope.gameSearch = '' // That recives the input value from ng-model(index.html)
 
 	})
