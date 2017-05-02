@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>League of Games</title>
+    <title>League of Coomit</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
@@ -12,7 +12,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">League of Games. The game search engine.</a>
+                <a class="navbar-brand" href="#"><strong>Git Commit.</strong> The comic search engine.</a>
             </div>
         </div>
     </nav>
@@ -24,9 +24,14 @@
                 <h2>Search game<h2>
                 <input ng-model="gameInput" class="form-control" id="focusedInput" type="text" placeholder="Your search">
                 <button ng-click="searchGameButton()" href="#" class="btn btn-primary btn-lg btn-block">Search game</button>
-                 <select id="" class="input" >
-                    <option ng-repeat=" game in gamelist" >{{ game.name}}</option>
-                </select>   
+                <div class="col-xs-12">
+                    <ul id="" class="input gamelist list-unstyled" >
+                       <li ng-repeat=" game in gamelist">
+                          <img class="img-responsive" ng-src="{{game.image.super_url}}">
+                          <h4 class="text-center"> {{game.name}}</h4>
+                     </li>
+                    </ul>  
+                </div>
             </div>
         </div>
     </div>
