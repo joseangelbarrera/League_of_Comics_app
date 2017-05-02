@@ -22,15 +22,14 @@
             <h1>{{ title }}</h1>
                 <label class="control-label" for="focusedInput"></label>
                 <h2>Search game<h2>
-                <input ng-model="gameSearch" class="form-control" id="focusedInput" type="text" placeholder="Your search">
-                <button href="#" class="btn btn-primary btn-lg btn-block">Search game</button>
+                <input ng-model="gameInput" class="form-control" id="focusedInput" type="text" placeholder="Your search">
+                <button ng-click="searchGame()" href="#" class="btn btn-primary btn-lg btn-block">Search game</button>
             </div>
         </div>
 </div>
-<ul>
-    <li>
-    </li>
-</ul>
+<select id="" class="input">
+    <option ng-repeat="game in gamelist" >{{ game.ALGO }}</option>
+</select>
 <div class="container">
     <a href="#" class="btn btn-success">Facebook</a>
     <a href="#" class="btn btn-success">Twitter</a>
