@@ -7,10 +7,10 @@ angular.module('gameApp')
             })
             .when('/game_search', {
             	templateUrl: 'templates/game_search.html',
-            	controller:
+            	controller: ''
             })
             .when('/game-info', {
             	templateUrl: '/templates/game-info.html'
-            	controller:
+            	controller: ''
             })
     })
