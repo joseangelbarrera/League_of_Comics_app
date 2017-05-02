@@ -24,9 +24,9 @@
                 <h2>Search game<h2>
                 <input ng-model="gameInput" class="form-control" id="focusedInput" type="text" placeholder="Your search">
                 <button ng-click="searchGameButton()" href="#" class="btn btn-primary btn-lg btn-block">Search game</button>
-                 <select id="" class="input">
-                    <option ng-repeat="game in gamelist" >{{ game.name}}</option>
-                </select>
+                 <select id="" class="input" >
+                    <option ng-repeat=" game in gamelist" >{{ game.name}}</option>
+                </select>   
             </div>
         </div>
     </div>

@@ -13,4 +13,5 @@ angular.module('gameApp')
           		console.log($scope.gamelist)
           	})
           }
+     
 	})
